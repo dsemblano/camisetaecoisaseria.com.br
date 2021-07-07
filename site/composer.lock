@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ced9f8f3bb02132561ea134393fc75a3",
+    "content-hash": "893b1b3602432c8b1b559968ddef6cfc",
     "packages": [
         {
             "name": "composer/installers",
@@ -973,6 +973,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/dc-woocommerce-multi-vendor/"
+        },
+        {
+            "name": "wpackagist-plugin/disable-real-mime-check",
+            "version": "1.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/disable-real-mime-check/",
+                "reference": "tags/1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/disable-real-mime-check.1.0.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/disable-real-mime-check/"
         },
         {
             "name": "wpackagist-plugin/fatal-error-notify",

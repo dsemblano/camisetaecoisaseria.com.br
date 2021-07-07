@@ -5,8 +5,8 @@ wordpress_sites:
   camiseta.com:
     site_hosts:
     - canonical: staging.camisetaecoisaseria.com.br
-      redirects:
-      - www.staging.camisetaecoisaseria.com.br
+      #redirects:
+      #- www.staging.camisetaecoisaseria.com.br
     local_path: ../site
     branch: master
     repo: git@github.com:dsemblano/camisetaecoisaseria.com.br.git
