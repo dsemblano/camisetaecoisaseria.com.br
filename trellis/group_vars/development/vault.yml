@@ -1,0 +1,17 @@
+# Created by trellis-cli v0.9.0
+# Documentation: https://roots.io/trellis/docs/vault/
+
+vault_mysql_root_password: O8lJbFzOMxcJqjLtQ3egwvTI6gEtsqXU7w8A4zFMRk64VChhHlXVmxrOc0fTNHuN
+vault_wordpress_sites:
+  camiseta.com:
+    admin_password: QG7nTDDZFe9tI83qKRqU85pCYZXxTiISOqX6lCjlOu45qka3ucGN2PLdKWRuFbQz
+    env:
+      db_password: ald0HQgOjpERLjiqZ7kbVLGHIOu0PI5dvYfuPLCDCcoBdllOG7h0UdZZLNi4M4EC
+      auth_key: 9dpLbW7XOCUagNTFVPjdjCIsV78zbh8byXNEPnnXkVgfiNux7CfQDJDEavwaj03Q
+      secure_auth_key: cg2I4YLN2CHbgt4fa7iVdrYlh4LWcFuT9HPahU8iv1icmTfsw2dAOdibNdXRh8RA
+      logged_in_key: TayZTiHRqtfLZDvYFgp6L9FPSQDuaDwzpznv5udskz7bqiKEJuWkrOVvX1GXWVUx
+      nonce_key: RuDqmGP2krQr2W6kIIg1gZyd8DUJcxQivhO5N6rsLQ6dhFJi96xocCWCGBFxegyH
+      auth_salt: AbY2qYbhoGh0epIwl58r5qunDxhighSdtCQipyAhQRwncziXBehkFJI4vhLrWiNB
+      secure_auth_salt: KjXcFNmAXEgg1d3cOD34RzhPKkXErggwGt5JGE4a9MnSzrEtUgkb8qV8HPY7Opsu
+      logged_in_salt: doBGEWYqm4stAhGiDNBZQCoAIwXHol0O6W23cPi9CamqrsKTRNYbJJeKFlQX7ahD
+      nonce_salt: YciTrfpRnIt9frdgUekIpBkZDnlVsRGcYvjhLX8lOsyaumvXEeI8qa64OTb9Flvx

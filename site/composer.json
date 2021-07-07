@@ -1,0 +1,99 @@
+{
+  "name": "roots/bedrock",
+  "type": "project",
+  "license": "MIT",
+  "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
+  "homepage": "https://roots.io/bedrock/",
+  "authors": [
+    {
+      "name": "Scott Walkinshaw",
+      "email": "scott.walkinshaw@gmail.com",
+      "homepage": "https://github.com/swalkinshaw"
+    },
+    {
+      "name": "Ben Word",
+      "email": "ben@benword.com",
+      "homepage": "https://github.com/retlehs"
+    }
+  ],
+  "keywords": [
+    "bedrock", "composer", "roots", "wordpress", "wp", "wp-config"
+  ],
+  "support": {
+    "issues": "https://github.com/roots/bedrock/issues",
+    "forum": "https://discourse.roots.io/category/bedrock"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "composer/installers": "^1.11",
+    "vlucas/phpdotenv": "^5.3",
+    "oscarotero/env": "^2.1",
+    "roots/bedrock-autoloader": "^1.0",
+    "roots/wordpress": "5.7.2",
+    "roots/wp-config": "1.0.0",
+    "roots/wp-password-bcrypt": "1.0.0",
+    "wpackagist-plugin/woocommerce":">=5.4.1",
+    "wpackagist-plugin/woocommerce-correios":">=3.8.0",
+    "wpackagist-plugin/woocommerce-pagseguro":">=2.14.0",
+    "wpackagist-plugin/regenerate-thumbnails":">=3.1.1",
+    "wpackagist-plugin/woocommerce-menu-bar-cart":">=2.9.6",
+    "wpackagist-plugin/loco-translate":">=2.3.3",
+    "wpackagist-plugin/wp-enable-webp":">=1.0",
+    "wpackagist-plugin/automatic-translator-addon-for-loco-translate":">=2.1.1",
+    "wpackagist-plugin/smart-slider-3":">=3.3.24",
+    "wpackagist-plugin/instagram-feed":">=2.5.4",
+    "wpackagist-plugin/sassy-social-share":">=3.3.4",   
+    "wpackagist-plugin/wp-mail-smtp":">=1.8.1",
+    "wpackagist-plugin/autodescription":">=4.0.4",
+    "wpackagist-plugin/woocommerce-pagarme":">=2.0.17",
+    "wpackagist-plugin/woocommerce-extra-checkout-fields-for-brazil":">=3.7.2",
+    "wpackagist-plugin/woocommerce-advanced-free-shipping":">=1.1.4",
+    "wpackagist-plugin/woo-picpay":">=1.1.5",
+    "wpackagist-plugin/woo-cart-abandonment-recovery":">=1.2.7",
+    "wpackagist-plugin/woo-payment-discounts":">=1.2.0",
+    "wpackagist-plugin/woocommerce-services":">=1.25.0",
+    "wpackagist-plugin/product-blocks":">=1.0.9",
+    "wpackagist-plugin/smart-woocommerce-search":">=2.0.1",
+    "wpackagist-plugin/fatal-error-notify":">=1.4.3",
+    "wpackagist-plugin/tawkto-live-chat":">=0.5.3",
+    "wpackagist-plugin/mobile-menu":">=2.8.1.8",
+    "wpackagist-plugin/warp-imagick":">=1.6.2",
+    "wpackagist-plugin/dc-woocommerce-multi-vendor":">=3.7.5",
+    "wpackagist-plugin/query-monitor":">=3.7.1",
+    "wpackagist-plugin/wps-hide-login":">=1.5.4.2",
+    "wpackagist-theme/twentyseventeen":">=2.7"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.6.0",
+    "roave/security-advisories": "dev-master"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "web/wp"
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "php -r \"copy('.env.example', '.env');\""
+    ],
+    "test": [
+      "phpcs"
+    ]
+  }
+}
