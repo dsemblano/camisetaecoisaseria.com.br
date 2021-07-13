@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "893b1b3602432c8b1b559968ddef6cfc",
+    "content-hash": "0a68edd4d3e5f3884232958b5b035247",
     "packages": [
         {
             "name": "composer/installers",
@@ -1209,16 +1209,34 @@
             "homepage": "https://wordpress.org/plugins/warp-imagick/"
         },
         {
-            "name": "wpackagist-plugin/woo-cart-abandonment-recovery",
-            "version": "1.2.12",
+            "name": "wpackagist-plugin/wc-multivendor-marketplace",
+            "version": "3.4.9",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/woo-cart-abandonment-recovery/",
-                "reference": "tags/1.2.12"
+                "url": "https://plugins.svn.wordpress.org/wc-multivendor-marketplace/",
+                "reference": "tags/3.4.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woo-cart-abandonment-recovery.1.2.12.zip"
+                "url": "https://downloads.wordpress.org/plugin/wc-multivendor-marketplace.3.4.9.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wc-multivendor-marketplace/"
+        },
+        {
+            "name": "wpackagist-plugin/woo-cart-abandonment-recovery",
+            "version": "1.2.13",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/woo-cart-abandonment-recovery/",
+                "reference": "tags/1.2.13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woo-cart-abandonment-recovery.1.2.13.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1390,15 +1408,15 @@
         },
         {
             "name": "wpackagist-plugin/woocommerce-services",
-            "version": "1.25.15",
+            "version": "1.25.16",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/woocommerce-services/",
-                "reference": "tags/1.25.15"
+                "reference": "tags/1.25.16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce-services.1.25.15.zip"
+                "url": "https://downloads.wordpress.org/plugin/woocommerce-services.1.25.16.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1486,12 +1504,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "1a08d0c7ab47e57fad0d254951a615f07445e91f"
+                "reference": "88c4d972f82b364386c98eebecf38512708a4de4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/1a08d0c7ab47e57fad0d254951a615f07445e91f",
-                "reference": "1a08d0c7ab47e57fad0d254951a615f07445e91f",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/88c4d972f82b364386c98eebecf38512708a4de4",
+                "reference": "88c4d972f82b364386c98eebecf38512708a4de4",
                 "shasum": ""
             },
             "conflict": {
@@ -1549,6 +1567,7 @@
                 "endroid/qr-code-bundle": "<3.4.2",
                 "enshrined/svg-sanitize": "<0.13.1",
                 "erusev/parsedown": "<1.7.2",
+                "ether/logs": "<3.0.4",
                 "ezsystems/demobundle": ">=5.4,<5.4.6.1",
                 "ezsystems/ez-support-tools": ">=2.2,<2.2.3",
                 "ezsystems/ezdemo-ls-extension": ">=5.4,<5.4.2.1",
@@ -1849,7 +1868,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-07-02T20:02:51+00:00"
+            "time": "2021-07-12T17:14:45+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
